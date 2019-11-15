@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tetris</title>
+  </head>
+  <body>
+    <div class="mainCont">
+      <div class="sideCont">
+        <div class="controlCont">
+          <h1>Controls</h1>
+          <img
+            height="50"
+            width="50"
+            src="http://icons.iconarchive.com/icons/chromatix/keyboard-keys/128/arrow-left-icon.png"
+          />
+          <img
+            height="50"
+            width="50"
+            src="http://icons.iconarchive.com/icons/chromatix/keyboard-keys/128/arrow-down-icon.png"
+          />
+          <img
+            height="50"
+            width="50"
+            src="http://icons.iconarchive.com/icons/chromatix/keyboard-keys/128/arrow-right-icon.png"
+          />
+          <p>Press Q to rotate left.</p>
+          <img
+            height="50"
+            width="50"
+            src="http://icons.iconarchive.com/icons/chromatix/keyboard-keys/128/letter-uppercase-Q-icon.png"
+          />
+          <p>Press W to rotate right.</p>
+          <img
+            height="50"
+            width="50"
+            src="http://icons.iconarchive.com/icons/chromatix/keyboard-keys/128/letter-uppercase-W-icon.png"
+          />
+        </div>
+        <div class="scoreCont">
+          <h1>SCORE:</h1>
+          <div id="score"></div>
+          <audio id="myMusic" controls autoplay="true">
+            <source src="Tetris.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div class="tetrisCont">
+        <canvas id="tetris" width="240" height="400"></canvas>
+      </div>
+    </div>
+    <script src="tetris.js"></script>
+  </body>
+</html>
